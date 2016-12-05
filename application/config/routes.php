@@ -65,6 +65,9 @@ $route['admin/save/(:any)'] = 'administrator_controller/save/$1';
 $route['admin/delete/(:any)'] = 'administrator_controller/delete/$1';
 $route['admin/add/(:any)'] = 'administrator_controller/add/$1';
 
+// Rest Testing
+$route['normtest'] = 'administrator_rest';
+
 //$route['admin/delete'] = 'administrator_controller/index_delete';
 /*
 $route['admin/recipeTable/edit/(:num)'] = 'administrator_controller/recipeEdit/$1';

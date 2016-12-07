@@ -49,24 +49,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['sales'] = 'sales_controller';
-$route['sales/(:num)'] = 'sales_controller/get/$1';
-
-$route['production'] = 'production_controller';
-$route['production/(:num)'] = 'production_controller/get/$1';
-
-$route['receiving'] = 'receiving_controller';
-
-//Admin
-$route['admin'] = 'administrator_controller';
-$route['admin/edit/(:any)/(:num)'] = 'administrator_controller/edit/$1/$2';
-$route['admin/cancel'] = 'administrator_controller/cancel';
-$route['admin/save/(:any)'] = 'administrator_controller/save/$1';
-$route['admin/delete/(:any)'] = 'administrator_controller/delete/$1';
-$route['admin/add/(:any)'] = 'administrator_controller/add/$1';
 
 // Rest Testing
-$route['normtest'] = 'administrator_rest';
+//$route['normtest'] = 'administrator_rest';
 
 //$route['admin/delete'] = 'administrator_controller/index_delete';
 /*
@@ -83,7 +68,7 @@ $route['admin/suppliesTable/delete']  = 'administrator_controller/suppliesDel';
 $route['admin/suppliesTable/save']   = 'administrator_controller/suppliesSave';
 */
 
-$route['default_controller'] = 'homepage_controller';
+$route['default_controller'] = 'Welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 

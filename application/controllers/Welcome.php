@@ -4,8 +4,8 @@ class Welcome extends Application {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Stock');
-		$this->data['pagetitle'] = 'stock status.. (Server backend)';
+		$this->load->model('supplies');
+		$this->data['pagetitle'] = '(Server backend) Stock';
 	}
 	/**
 	 * Sets up the form and renders it.
@@ -13,8 +13,9 @@ class Welcome extends Application {
 	function index()
 	{
 		$this->load->helper('formfields');
-		$this->data['title'] = 'dan norm manu (Server)';
-		$this->data['pagebody'] = 'welcome_message';
+		$this->data['title'] = 'dan norm manu backend(server)';
+		$this->data['pagebody'] = 'Welcome_message';
+		
 		$this->render();
 	}
 }

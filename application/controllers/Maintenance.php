@@ -79,6 +79,7 @@ class Maintenance extends Rest_Controller {
 	    $record = array_merge(array('id' => $key), $this->_put_args);
 	    $this->menu->update($record);
 	    $this->response(array('ok'), 200);
+	}
 	
 	/*
 	

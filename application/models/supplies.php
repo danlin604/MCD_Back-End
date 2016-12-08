@@ -8,13 +8,6 @@ class Supplies extends MY_Model {
 		parent::__construct();
 	}
         
-        /*
-        `id` 			int(11) 	NOT NULL,
-        `name` 			varchar(256) 	NOT NULL,
-        `description` 		varchar(256) 	NOT NULL,
-        `price` 		decimal(10,2) 	NOT NULL,
-        `currAvail` 		int(11) 	NOT NULL        
-        */        
         function rules() {
             $config = [
                 ['field'=>'id', 'label'=>'Stock code', 'rules'=> 'required|integer'],

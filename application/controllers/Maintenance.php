@@ -10,7 +10,7 @@ class Maintenance extends Rest_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('supplies');
+		$this->load->model('Supplies');
 	}
 	// Handle an incoming GET ... 	returns a list of all ports. Test: http://a2backend.local:4711/maintenance
 	function index_get()
@@ -18,9 +18,9 @@ class Maintenance extends Rest_Controller {
 		$key = $this->get('id');
 		if(!$key)
 		{
-			$this->response($this->supplies->all(), 200);
+			$this->response($this->Supplies->all(), 200);
 		} else {
-			$result = $this->supplies->get($key);
+			$result = $this->Supplies->get($key);
 			if($result != null)
 			{
 				$this->response($result, 200);

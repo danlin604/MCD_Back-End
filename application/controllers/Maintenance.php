@@ -68,8 +68,15 @@ class Maintenance extends Rest_Controller {
     // Handle an incoming POST - add a new menu item - ID in URL
     function item_post($key = null)
     {
+        $incoming = key($this->post());
+
         // decode record before anything, as assoc array
-        $record = json_decode($this->post(),true);
+        $record = json_decode($incoming,true);
+        
+        // decode record before anything, as assoc array
+        //$record = json_decode($this->post(),true);
+        print_r($record);
+        //die();
 
         // item ID specified as segment or query parameter
         if (($key == null) || ($key == 'id'))
@@ -123,8 +130,6 @@ class Maintenance extends Rest_Controller {
     // Handle an incoming PUT - update a new menu item - ID in URL
     function item_put($key = null)
     {
-        var_dump($this -> put());
-        die();
         $incoming = key($this->put());
 
         // decode record before anything, as assoc array

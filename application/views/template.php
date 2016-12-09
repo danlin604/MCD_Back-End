@@ -33,12 +33,12 @@
 				</div>
 
 				<!-- Tabs -->
-                                {navbar}
 			</header>
 
 			<!-- Main Content -->
 			<main class="mdl-layout__content">
-                            <div class="page-content">{content}</div>
+				<div>{title}</div>
+                <div class="page-content">{content}</div>
 			</main>
 		</div>
 

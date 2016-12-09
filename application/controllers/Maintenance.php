@@ -117,12 +117,14 @@ class Maintenance extends Rest_Controller {
     // Handle an incoming PUT - update a new menu item, ID in payload
     function index_put()
     {
-            $this->crud_put($this->post());
+            $this->crud_put($this->put());
     }
 
     // Handle an incoming PUT - update a new menu item - ID in URL
     function item_put($key = null)
     {
+        var_dump($this -> put());
+        die();
         $incoming = key($this->put());
 
         // decode record before anything, as assoc array
